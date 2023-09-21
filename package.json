@@ -1,0 +1,45 @@
+{
+  "name": "vivliostyle-theme-macneko-techbook",
+  "description": "Vivliostyle theme for techbook",
+  "version": "0.1.0",
+  "author": "macneko-ayu <macneko.ayu@gmail.com>",
+  "scripts": {
+    "build": "vivliostyle build",
+    "preview": "vivliostyle preview",
+    "validate": "vivliostyle-theme-scripts validate"
+  },
+  "dependencies": {
+    "@vivliostyle/theme-base": "latest"
+  },
+  "devDependencies": {
+    "@vivliostyle/cli": "^7.2.3",
+    "vivliostyle-theme-scripts": "^0.3.5"
+  },
+  "peerDependencies": {
+    "@vivliostyle/cli": ">=7"
+  },
+  "peerDependenciesMeta": {
+    "@vivliostyle/cli": {
+      "optional": true
+    }
+  },
+  "files": [
+    "*.css",
+    "example",
+    "vivliostyle.config.js"
+  ],
+  "keywords": [
+    "vivliostyle",
+    "vivliostyle-theme"
+  ],
+  "license": "MIT",
+  "vivliostyle": {
+    "theme": {
+      "name": "Vivliostyle Theme Macneko Techbook",
+      "author": "macneko-ayu <macneko.ayu@gmail.com>",
+      "style": "./theme.css",
+      "category": "magazine",
+      "topics": []
+    }
+  }
+}
