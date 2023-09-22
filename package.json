@@ -33,6 +33,7 @@
     "vivliostyle",
     "vivliostyle-theme"
   ],
+  "repository": "git@github.com:macneko-ayu/vivliostyle-theme-macneko-techbook.git",
   "license": "MIT",
   "vivliostyle": {
     "theme": {
