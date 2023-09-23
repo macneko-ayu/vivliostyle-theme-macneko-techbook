@@ -16,6 +16,17 @@ module.exports = {
 };
 ```
 
+If you want to add your CSS:
+
+```js
+module.exports = {
+  theme: [
+    'vivliostyle-theme-macneko-techbook',
+    // add your CSS 
+  ],
+};
+```
+
 ## Dev
 
 ### Files
@@ -25,28 +36,26 @@ vivliostyle-theme-macneko-techbook
 ├── LICENSE
 ├── README.md
 ├── example
-│   ├── default.html       // auto generated
-│   └── default.md         // 🖋
+│   ├── assets                            // auto generated
+│        ├── Logo (Mark + Type).png       // auto generated
+│   └── default.md                        // 🖋
 ├── package.json
-├── theme.css              // 🖋
+├── theme.css                             // 🖋
 └── vivliostyle.config.js
 ```
 
 **example**: Contain sample manuscripts using your theme.
 
-**scss**: You can add files for specific use (print, screen, cover, toc, preface, ...) and apply them at `theme` `entry > theme` in vivliostyle.config.js. Partial files whose names begin with `_` will be ignored.
-
-
 ### Commands
 
 Run `vivliostyle preview` to preview your `theme_*.css`.
 
-To watch file changes, use `dev` script.
+To watch file changes, use `preview` script.
 
 ```bash
-npm run dev
+npm run preview
 # or
-yarn dev
+yarn preview
 ```
 
 You can specify your CSS file and manuscript file for preview in vivliostyle.config.js:
@@ -54,10 +63,14 @@ You can specify your CSS file and manuscript file for preview in vivliostyle.con
 ```js
 module.exports = {
   language: 'en',
-  theme: ['node_modules/@vivliostyle/theme-base', '.'],
+  theme: [
+    'node_modules/@vivliostyle/theme-base', 
+    'node_modules/@vivliostyle/theme-techbook', 
+    '.'
+  ],
   entry: [
-      'example/default.md',
-      // and more...
+    'example/default.md',
+    // and more...
   ],
 }
 ```

@@ -9,14 +9,15 @@
     "validate": "vivliostyle-theme-scripts validate"
   },
   "dependencies": {
-    "@vivliostyle/theme-base": "latest"
+    "@vivliostyle/theme-base": "latest",
+    "@vivliostyle/theme-techbook": "latest"
   },
   "devDependencies": {
-    "@vivliostyle/cli": "^7.2.3",
+    "@vivliostyle/cli": "^8.3.0",
     "vivliostyle-theme-scripts": "^0.3.5"
   },
   "peerDependencies": {
-    "@vivliostyle/cli": ">=7"
+    "@vivliostyle/cli": ">=8"
   },
   "peerDependenciesMeta": {
     "@vivliostyle/cli": {
@@ -32,6 +33,7 @@
     "vivliostyle",
     "vivliostyle-theme"
   ],
+  "repository": "git@github.com:macneko-ayu/vivliostyle-theme-macneko-techbook.git",
   "license": "MIT",
   "vivliostyle": {
     "theme": {
