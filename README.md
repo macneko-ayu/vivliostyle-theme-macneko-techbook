@@ -37,7 +37,7 @@ vivliostyle-theme-macneko-techbook
 ├── README.md
 ├── example
 │   ├── assets                            // auto generated
-│        ├── Logo (Mark + Type).png       // auto generated
+│   │   └── Logo (Mark + Type).png        // auto generated
 │   └── default.md                        // 🖋
 ├── package.json
 ├── theme.css                             // 🖋
