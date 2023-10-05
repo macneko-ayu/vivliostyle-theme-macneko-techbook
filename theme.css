@@ -50,6 +50,11 @@
   /* --vs--monospace-line-height: 1.3; */
   --vs--pre-font-size: 95%;
 
+  /* 
+   * prism
+   */
+  --vs-prism--color-string: #a6e22e;
+
   /*
    * footnote's font size
    */
