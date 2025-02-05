@@ -1,7 +1,7 @@
 {
   "name": "vivliostyle-theme-macneko-techbook",
   "description": "Vivliostyle theme for techbook",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "author": "macneko-ayu <macneko.ayu@gmail.com>",
   "scripts": {
     "build": "vivliostyle build",
@@ -9,15 +9,15 @@
     "validate": "vivliostyle-theme-scripts validate"
   },
   "dependencies": {
-    "@vivliostyle/theme-base": "1.0.1",
-    "@vivliostyle/theme-techbook": "1.0.1"
+    "@vivliostyle/theme-base": "2.0.0",
+    "@vivliostyle/theme-techbook": "2.0.0"
   },
   "devDependencies": {
-    "@vivliostyle/cli": "^8.3.0",
-    "vivliostyle-theme-scripts": "^0.3.5"
+    "@vivliostyle/cli": "^8.18.0",
+    "vivliostyle-theme-scripts": "^0.3.6"
   },
   "peerDependencies": {
-    "@vivliostyle/cli": ">=8"
+    "@vivliostyle/cli": ">=8.18.0"
   },
   "peerDependenciesMeta": {
     "@vivliostyle/cli": {
