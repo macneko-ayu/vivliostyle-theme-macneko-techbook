@@ -1,7 +1,7 @@
 {
   "name": "vivliostyle-theme-macneko-techbook",
   "description": "Vivliostyle theme for techbook",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "macneko-ayu <macneko.ayu@gmail.com>",
   "scripts": {
     "build": "vivliostyle build",
