@@ -3,7 +3,7 @@ class: content
 ---
 
 <div class="doc-header">
-  <h1>Vivliostyle Theme Example</h1>
+  <div class="doc-title">Vivliostyle Theme Example</div>
   <div class="doc-author">your name</div>
 </div>
 
