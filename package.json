@@ -10,14 +10,14 @@
   },
   "dependencies": {
     "@vivliostyle/theme-base": "2.0.0",
-    "@vivliostyle/theme-techbook": "2.0.0"
+    "@vivliostyle/theme-techbook": "^2.0.0"
   },
   "devDependencies": {
-    "@vivliostyle/cli": "^8.18.0",
+    "@vivliostyle/cli": "^9.0.2",
     "vivliostyle-theme-scripts": "^0.3.6"
   },
   "peerDependencies": {
-    "@vivliostyle/cli": ">=8.18.0"
+    "@vivliostyle/cli": ">=9.0.2"
   },
   "peerDependenciesMeta": {
     "@vivliostyle/cli": {
