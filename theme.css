@@ -43,7 +43,7 @@
    * p
    */
   --vs--p-margin-block: var(--vs-font-size);
-  
+
   /* 
    * code block
    */
@@ -63,7 +63,7 @@
   /*
   * endnote contents's font size
   */
-  --vs-endnote--section-font-size:  calc(var(--vs-font-size) - 1);
+  --vs-endnote--section-font-size: calc(var(--vs-font-size) - 1);
 
   /* 
    * page margin box's font size
@@ -123,11 +123,11 @@ figure img {
  * footnote-external-link
  */
 @media print {
-  :not(.footnote) > a[href^='http']::before {
+  :not(.footnote)>a[href^='http']::before {
     display: none;
   }
 
-  :not(.footnote) > a[href^='http']::after {
+  :not(.footnote)>a[href^='http']::after {
     display: none;
   }
 }
@@ -138,11 +138,11 @@ figure img {
 :is(#toc, [role='doc-toc']) li::before {
   inset-inline-start: calc(var(--vs-toc--ol-indent-size) * -1.2);
 }
- 
+
 /* 
  * chapter layout
  */
-.content > section > h1 {
+.content>section>h1 {
   display: none;
 }
 
@@ -172,6 +172,33 @@ div.doc-header::before {
   left: 2pt;
 }
 
+div.doc-title {
+  /* h1 の指定を @vivliostyle/theme-base/css/common/basic.css からコピーしたもの */
+  break-after: var(--vs--h1-break-after, var(--vs--heading-break-after));
+  break-inside: var(--vs--h1-break-inside, var(--vs--heading-break-inside));
+  font-family: var(--vs--h1-font-family, var(--vs--heading-font-family));
+  font-feature-settings: var(--vs--h1-font-feature-settings,
+      var(--vs--heading-font-feature-settings));
+  font-kerning: var(--vs--h1-font-kerning, var(--vs--heading-font-kerning));
+  font-size: var(--vs--h1-font-size);
+  font-stretch: var(--vs--h1-font-stretch, var(--vs--heading-font-stretch));
+  font-variant: var(--vs--h1-font-variant, var(--vs--heading-font-variant));
+  font-variation-settings: var(--vs--h1-font-variation-settings,
+      var(--vs--heading-font-variation-settings));
+  font-weight: var(--vs--h1-font-weight, var(--vs--heading-font-weight));
+  hyphens: var(--vs--h1-hyphens, var(--vs--heading-hyphens));
+  letter-spacing: var(--vs--h1-letter-spacing,
+      var(--vs--heading-letter-spacing));
+  line-height: var(--vs--h1-line-height, var(--vs--heading-line-height));
+  margin-block: var(--vs--h1-margin-block, var(--vs--heading-margin-block));
+  margin-inline: var(--vs--h1-margin-inline, var(--vs--heading-margin-inline));
+  text-align: var(--vs--h1-text-align, var(--vs--heading-text-align));
+  text-indent: var(--vs--h1-text-indent, var(--vs--heading-text-indent));
+  text-spacing: var(--vs--h1-text-spacing, var(--vs--heading-text-spacing));
+  word-break: var(--vs--h1-word-break, var(--vs--heading-word-break));
+  word-spacing: var(--vs--h1-word-spacing, var(--vs--heading-word-spacing));
+}
+
 div.doc-author {
   text-align: right;
 }
@@ -189,8 +216,7 @@ div.doc-author {
 /* 
  * page break
  */
- hr.page-break {
+hr.page-break {
   break-after: page;
   visibility: hidden;
 }
-
