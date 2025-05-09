@@ -74,8 +74,8 @@
    * toc
    */
   --vs-toc--marker-content: counter(vs-counter-toc) '.';
-  --vs-toc--marker-display: block;
-  --vs-toc--marker-text-align: end;
+  --vs-toc--marker-display: inline-block;
+  --vs-toc--ol-indent-size: 1.5rem;
 
   /* 
    * page's margins
@@ -84,6 +84,23 @@
   --vs-page--margin-bottom: 25mm;
   --vs-page--margin-inner: 17mm;
   --vs-page--margin-outer: 17mm;
+}
+
+/* 
+ * toc
+ */
+#toc,
+[role='doc-toc'] {
+  --vs--ol-minimum-inline-indent-size: revert;
+}
+
+:is(#toc, [role='doc-toc']) li::before {
+  inline-size: auto;
+  inset-inline-start: 0;
+}
+
+:is(#toc, [role='doc-toc']) ol {
+  padding-inline-start: 20px;
 }
 
 /* 
