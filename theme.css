@@ -140,6 +140,10 @@ figure img {
  * footnote-external-link
  */
 @media print {
+  :not(.footnote) > a[href^='http'] {
+    counter-increment: none;
+  }
+
   :not(.footnote)>a[href^='http']::before {
     display: none;
   }
