@@ -1,10 +1,8 @@
 module.exports = {
   language: 'en',
-  theme: [
-    'node_modules/@vivliostyle/theme-base', 
-    'node_modules/@vivliostyle/theme-techbook', 
-    '.'
-  ],
+  // theme.css が @vivliostyle/theme-techbook(とその依存の theme-base)を
+  // パッケージ名で import しているため、theme 配列に base を列挙する必要はない
+  theme: ['.'],
   entry: ['example/default.md'],
   workspaceDir: '.vivliostyle',
   output: [

@@ -6,18 +6,17 @@
   "scripts": {
     "build": "vivliostyle build",
     "preview": "vivliostyle preview",
-    "validate": "vivliostyle-theme-scripts validate"
+    "validate": "vivliostyle theme validate"
   },
   "dependencies": {
-    "@vivliostyle/theme-base": "2.1.0",
-    "@vivliostyle/theme-techbook": "^2.0.1"
+    "@vivliostyle/theme-base": "3.0.0",
+    "@vivliostyle/theme-techbook": "3.0.0"
   },
   "devDependencies": {
-    "@vivliostyle/cli": "^10.0.2",
-    "vivliostyle-theme-scripts": "^0.3.6"
+    "@vivliostyle/cli": "^11.3.3"
   },
   "peerDependencies": {
-    "@vivliostyle/cli": ">=10.0.2"
+    "@vivliostyle/cli": ">=11.3.1"
   },
   "peerDependenciesMeta": {
     "@vivliostyle/cli": {
