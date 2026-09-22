@@ -8,6 +8,8 @@ Vivliostyle theme for techbook
 
 ## Use
 
+Requires `@vivliostyle/cli` 11.3.1 or later.
+
 In `vivliostyle.config.js`:
 
 ```js
@@ -63,11 +65,7 @@ You can specify your CSS file and manuscript file for preview in vivliostyle.con
 ```js
 module.exports = {
   language: 'en',
-  theme: [
-    'node_modules/@vivliostyle/theme-base', 
-    'node_modules/@vivliostyle/theme-techbook', 
-    '.'
-  ],
+  theme: ['.'],
   entry: [
     'example/default.md',
     // and more...
@@ -75,7 +73,7 @@ module.exports = {
 }
 ```
 
-Run `vivliostyle-theme-scripts validate` before publishing your package.
+Run `vivliostyle theme validate` before publishing your package.
 
 ```bash
 npm run validate
