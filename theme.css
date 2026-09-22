@@ -50,11 +50,7 @@
    */
   /* --vs--monospace-line-height: 1.3; */
   --vs--pre-font-size: 95%;
-  /*
-   * theme-techbook v3 が import する listing モジュールは
-   * コードブロックのキャプションに「Listing N:」を付与する。
-   * v2 までの見た目を維持するため非表示にする(必要なら block で有効化できる)
-   */
+  /* コードブロックのキャプションに付く「Listing N:」を非表示にする */
   --vs-listing--marker-display: none;
 
   /* 
@@ -144,9 +140,6 @@ figure img {
 
 /*
  * external link
- * v2 では theme-all.css に含まれる footnote-external-link.css が print 時の外部リンクを
- * 下線なしにしていた(脚注化自体は本テーマが無効化)。
- * v3 ではそのモジュールが import されなくなったため、下線なしの見た目のみを引き継ぐ
  */
 @media print {
   :not(.footnote) > a[href^='http'] {
